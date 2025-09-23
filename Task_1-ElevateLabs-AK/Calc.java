@@ -11,10 +11,11 @@ public class Calc {
         
         
         while (true) { 
-            System.out.println(
+            System.out.print(
                 "\nOperations \n\n 1 - Add \n 2 - Subtract \n 3 - Multiply \n 4 - Divide \n 5 - Modulo \n 6 - Exit \nselect operation - " 
             );
             int operation = scanner.nextInt();
+            System.out.println();
 
             switch (operation) {
                 case 1:
@@ -47,10 +48,10 @@ public class Calc {
     }
     public static void add(){
         
-	System.out.println("Enter Two values \t");
-        System.out.println("a: ");
+	System.out.println("Enter Two values ");
+        System.out.print("a: ");
         long a =scanner.nextLong();
-        System.out.println("b: ");
+        System.out.print("b: ");
         long b =scanner.nextLong();
         System.out.println(" = "+(a + b));
 	    
@@ -58,10 +59,10 @@ public class Calc {
 
     private static void subtract() {
 	
-	    System.out.println("Enter Two values \t");
-        System.out.println("a: ");
+	    System.out.println("Enter Two values ");
+        System.out.print("a: ");
         long a =scanner.nextLong();
-        System.out.println("b: ");
+        System.out.print("b: ");
         long b =scanner.nextLong();
         System.out.println(" = "+(a-b));    
 	    
@@ -69,10 +70,10 @@ public class Calc {
 
     private static void multiply() {
 	
-	System.out.println("Enter Two values \t");
-        System.out.println("a: ");
+	System.out.println("Enter Two values ");
+        System.out.print("a: ");
         long a =scanner.nextLong();
-        System.out.println("b: ");
+        System.out.print("b: ");
         long b =scanner.nextLong();
         System.out.println(" = "+(a*b));    
 	    
@@ -80,24 +81,24 @@ public class Calc {
 
     private static void divide() {
 	
-	    System.out.println("Enter Two values \t");
-        System.out.println("a: ");
+	    System.out.println("Enter Two values ");
+        System.out.print("a: ");
         long a =scanner.nextLong();
-        System.out.println("b: ");
+        System.out.print("b: ");
         long b =scanner.nextLong();
 	    if(b>0)
         System.out.println(" = "+(a/b)); 
 	    else{
-	    System.out.println(" 😒Divisor cannot be zero \n"); }
+	    System.out.println(" 😒Divisor cannot be zero "); }
 	    
     }
 
     private static void mod() {
 	
-	System.out.println("Enter Two values \n");
-        System.out.println("a: ");
+	System.out.println("Enter Two values ");
+        System.out.print("a: ");
         long a =scanner.nextLong();
-        System.out.println("b: ");
+        System.out.print("b: ");
         long b =scanner.nextLong();
         System.out.println(" = "+(a%b));   
 	     
@@ -106,7 +107,7 @@ public class Calc {
         
         while (true) { 
             int i=0;
-            System.out.println("\nwant to continue (1)\nexit (0) \n");
+            System.out.print("\nwant to continue (1)\nexit (0) \n - ");
             int c = scanner.nextInt();
             switch (c) {
                 case 1 :
